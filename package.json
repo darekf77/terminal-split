@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"npm-run bun run index.ts",
+    "start": "npm-run bun run index.ts",
+    "startv": "npm-run bun run index-vertical.ts",
+    "startvi": "npm-run bun run index-vertical-input.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@inquirer/prompts": "^5.3.8",
     "@types/node": "^22.2.0",
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.11.0",

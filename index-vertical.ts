@@ -9,7 +9,7 @@ const screen = blessed.screen({
 });
 
 // Create a grid layout
-const grid = new contrib.grid({ rows: 2, cols: 1, screen: screen });
+const grid = new contrib.grid({ rows: 1, cols: 2, screen: screen });
 
 // Create two terminal boxes
 const box1 = grid.set(0, 0, 1, 1, blessed.box, {
@@ -18,7 +18,7 @@ const box1 = grid.set(0, 0, 1, 1, blessed.box, {
     scrollbar: { ch: ' ' },
     label: 'Process 1', content: ''
 });
-const box2 = grid.set(1, 0, 1, 1, blessed.box, {
+const box2 = grid.set(0, 1, 1, 1, blessed.box, {
     scrollable: true,
     alwaysScroll: true,
     scrollbar: { ch: ' ' },
